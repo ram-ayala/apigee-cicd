@@ -72,13 +72,6 @@
                 <version>1.3.2</version>
                 <executions>
                     <execution>
-                        <id>create-config-cache</id>
-                        <phase>verify</phase>                        
-                        <goals>
-                            <goal>caches</goal>
-                        </goals>
-                    </execution>
-                    <execution>
                         <id>create-config-targetserver</id>
                         <phase>verify</phase>                        
                         <goals>
@@ -138,7 +131,6 @@
             <properties>
                 <apigee.profile>test</apigee.profile>
                 <apigee.hosturl>https://apigee.google.com</apigee.hosturl>
-                <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>rare-disk-332214</apigee.org>
                 <apigee.env>test</apigee.env>
                 <apigee.username>${username}</apigee.username>
@@ -151,7 +143,6 @@
             <properties>
                 <apigee.profile>test</apigee.profile>
                 <apigee.hosturl>https://apigee.google.com</apigee.hosturl>
-                <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>rare-disk-332214</apigee.org>
                 <apigee.env>test</apigee.env>
                 <apigee.username>${username}</apigee.username>
