@@ -26,7 +26,7 @@ pipeline {
         }}  
         stage('Policy-Code Analysis') {
             steps {
-			    sh "npm audit fix --force"
+			    sh "npm audit fix --force|true"
                 sh "npm install -g apigeelint"
                 sh "apigeelint -s hr-api/apiproxy/ -f codeframe.js"
             }
