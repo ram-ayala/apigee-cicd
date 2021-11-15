@@ -6,7 +6,7 @@ pipeline {
     agent any
     tools {
         maven 'M2'
-        jdk 'JDK'
+//        jdk 'JDK'
         nodejs 'NODEJS'
     }
 
