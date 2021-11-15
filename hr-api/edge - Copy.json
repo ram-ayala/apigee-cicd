@@ -11,6 +11,18 @@
               }
           ],
           "virtualHosts": [],
+          "caches": [
+              {
+                "name": "cicd-cache",
+                "description": "Cicd pipeline cache in Production",
+                "expirySettings": {
+                    "timeoutInSec": {
+                        "value": "6000"
+                    },
+                    "valuesNull": false
+                }
+              }            
+          ],
           "kvms": [
                 {
                     "name": "cicd-kvm-credentials",
