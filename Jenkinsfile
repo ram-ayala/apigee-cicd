@@ -38,9 +38,10 @@ pipeline {
                         sh "npm install"
                         sh "npm test test/unit/*.js"
                         sh "npm run coverage test/unit/*.js"
-                    } catch (e) {
-                        throw e
-                    } finally {
+                    } //catch (e) {
+                       // throw e
+                    //} 
+					finally {
                         sh "cd coverage && cp cobertura-coverage.xml $WORKSPACE"
                         step([$class: 'CoberturaPublisher', coberturaReportFile: 'cobertura-coverage.xml'])
                     }
