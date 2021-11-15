@@ -61,7 +61,7 @@ pipeline {
                  
                  // deploy only proxy and deploy both proxy and config based on edge.js update
                 //sh "sh && sh deploy.sh"
-                sh "mvn -f HR-API/pom.xml install -Pprod -Dusername=${apigeeUsername} -Dpassword=${apigeePassword} -Dapigee.config.options=update"
+                sh "mvn -f hr-api/pom.xml install -Ptest -Dusername=${apigeeUsername} -Dpassword=${apigeePassword} -Dapigee.config.options=update"
             }
         }
         stage('Integration Tests') {
