@@ -149,11 +149,11 @@
         <profile>
             <id>prod</id>
             <properties>
-                <apigee.profile>prod</apigee.profile>
+                <apigee.profile>test</apigee.profile>
                 <apigee.hosturl>https://apigee.google.com</apigee.hosturl>
                 <apigee.apiversion>v1</apigee.apiversion>
                 <apigee.org>rare-disk-332214</apigee.org>
-                <apigee.env>prod</apigee.env>
+                <apigee.env>test</apigee.env>
                 <apigee.username>${username}</apigee.username>
                 <apigee.password>${password}</apigee.password>
              </properties>
